@@ -8,14 +8,13 @@ module.exports = {
         contentBase: './dist'
     },
     entry: {
-        index: ['./src/index.js', './src/js/myjs.js' ,'./src/style/scss/pages/t.js'],
-        // about: ['./src/about.js', './src/js/myjs2.js'],
+        index: ['./src/index.js', './src/js/myjs.js', './src/js/myjs2.js'],
         vendor: ['./src/vendor.js']
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: '[name].bundle.js',
-        publicPath: './',
+        filename: 'assets/[name].bundle.js',
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -45,7 +44,7 @@ module.exports = {
                         loader: 'url-loader',
                         options: {
                             limit: 6000,
-                            name: 'images/[name].[ext]'
+                            name: 'assets/images/[name].[ext]'
                         }
                     },
                     'image-webpack-loader'
@@ -88,16 +87,8 @@ module.exports = {
             chunksSortMode: 'manual',
             chunks: ['vendor', 'index']
         }),
-        // html 加上js連結 && img處理
-        // new HtmlWebpackPlugin({
-        //     title: 'about',
-        //     filename: 'about.html',
-        //     template: 'html-withimg-loader!' + path.resolve(__dirname, './src/about.html'),
-        //     chunksSortMode: 'manual',
-        //     chunks: ['about']
-        // }),
         // css抽出成一個檔案.
-        new ExtractTextPlugin('[name].css'),
+        new ExtractTextPlugin('assets/[name].css'),
         // js壓縮醜化.
         // new UglifyJSPlugin({
         //     mangle: {

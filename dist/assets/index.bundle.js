@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 2);
@@ -143,8 +143,12 @@ document.getElementById("info").innerHTML = 'hi , my name is &nbsp;' + author;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-// import demo2 from '../../../assets/img/demo2.jpg';
 
+
+$(document).ready(function () {
+    $('.about').css('font-size', '25px');
+    console.log('jquery');
+});
 
 /***/ })
 /******/ ]);
