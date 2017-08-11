@@ -8,4 +8,4 @@ import info from './js/info.js';
 let Info = new info();
 let author = Info.getName();
 
-document.getElementById("info").innerHTML = 'hi , my name is &nbsp;' + author + ' .';
+document.getElementById("info").innerHTML = 'Hi , 這是一個簡單的 Webpack Demo  , by ' + author + ' .';

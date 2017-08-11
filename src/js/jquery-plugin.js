@@ -4,6 +4,6 @@ if (typeof jQuery === 'undefined') {
 
 +function ($) {
     var element = $('body');
-    element.css('background', '#eeeeee');
+    // element.css('background', '#81c784');
     console.log('Ok');
 }(jQuery);

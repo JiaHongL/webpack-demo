@@ -1,0 +1,6 @@
+body {
+  background-image: url(/webpack-demo/dist/assets/images/demo2.jpg); }
+  body .about {
+    width: 100%; }
+    body .about .info {
+      color: green; }

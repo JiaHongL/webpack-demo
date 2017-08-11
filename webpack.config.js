@@ -18,6 +18,7 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: 'assets/[name].[chunkHash:6].bundle.js',
         publicPath: '/webpack-demo/dist/',
+        // publicPath: '/',
     },
     module: {
         rules: [
@@ -83,7 +84,7 @@ module.exports = {
         // chunkHash && 緩存相關
         new webpack.HashedModuleIdsPlugin(),
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'vendor',
+            name: 'vendor'
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'runtime',
@@ -95,7 +96,7 @@ module.exports = {
             template: 'html-withimg-loader?min=false!' + path.resolve(__dirname, './src/index.html'),
             chunksSortMode: 'manual',
             minify: false,
-            chunks: ['vendor', 'app', 'hello']
+            chunks: ['runtime','vendor', 'app', 'hello']
         }),
         // css抽出成一個檔案 , 加上 link tag.
         new ExtractTextPlugin('assets/[name].[contenthash:6].css'),

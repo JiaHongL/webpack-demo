@@ -1,9 +1,0 @@
-body .about {
-  width: 100%; }
-  body .about .info {
-    color: green; }
-
-body .demo-images {
-  width: 100px;
-  height: 100px;
-  background: url(/webpack-demo/dist/assets/images/demo2.jpg); }
