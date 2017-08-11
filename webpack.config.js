@@ -95,7 +95,7 @@ module.exports = {
             template: 'html-withimg-loader?min=false!' + path.resolve(__dirname, './src/index.html'),
             chunksSortMode: 'manual',
             minify: false,
-            chunks: ['vendor', 'index', 'hello']
+            chunks: ['vendor', 'app', 'hello']
         }),
         // css抽出成一個檔案 , 加上 link tag.
         new ExtractTextPlugin('assets/[name].[contenthash:6].css'),
