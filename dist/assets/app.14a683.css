@@ -6,4 +6,4 @@ body .about {
 body .demo-images {
   width: 100px;
   height: 100px;
-  background: url(/assets/images/demo2.jpg); }
+  background: url(/webpack-demo/dist/assets/images/demo2.jpg); }
