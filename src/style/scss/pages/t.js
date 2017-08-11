@@ -1,1 +1,0 @@
-// import demo2 from '../../../assets/img/demo2.jpg';
