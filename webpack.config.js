@@ -96,16 +96,16 @@ module.exports = {
             template: 'html-withimg-loader?min=false!' + path.resolve(__dirname, './src/index.html'),
             chunksSortMode: 'manual',
             minify: false,
-            chunks: ['runtime','vendor', 'app', 'hello']
+            chunks: ['runtime', 'vendor', 'hello', 'app', ]
         }),
         // css抽出成一個檔案 , 加上 link tag.
         new ExtractTextPlugin('assets/[name].[contenthash:6].css'),
         // js壓縮醜化.
-        new UglifyJSPlugin({
-            mangle: {
-                // Skip mangling these
-                except: ['$super', '$', 'exports', 'require', 'default']
-            }
-        })
+        // new UglifyJSPlugin({
+        //     mangle: {
+        //         // Skip mangling these
+        //         except: ['$super', '$', 'exports', 'require', 'default']
+        //     }
+        // })
     ]
 }

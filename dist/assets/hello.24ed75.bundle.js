@@ -1,1 +1,0 @@
-webpackJsonp([2],{2:function(o,exports,n){o.exports=n("PiyS")},PiyS:function(o,exports,n){"use strict";console.log("hello world")}},[2]);
