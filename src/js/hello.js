@@ -1,4 +1,4 @@
-console.log('hello world');
-
-var GlobalVariable = 'GlobalVariable';
-// window.GlobalVariable = 'GlobalVariable';
+var GlobalVariable = 'hello world';
+// window.GlobalVariable = 'hello world';
+console.log(GlobalVariable);
+console.log(typeof GlobalVariable);

@@ -1,8 +1,5 @@
 console.log(typeof GlobalVariable);
 
-// import 'style-loader!css-loader!sass-loader!./style/scss/style.scss';
-// webpack --module-bind 'scss=style-loader!css-loader!sass-loader';
-
 import './style/scss/style.scss';
 import info from './js/info.js';
 

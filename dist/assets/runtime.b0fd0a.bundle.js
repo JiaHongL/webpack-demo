@@ -91,7 +91,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "assets/" + chunkId + "." + {"0":"1bc211","1":"095989","2":"1041ce"}[chunkId] + ".bundle.js";
+/******/ 		script.src = __webpack_require__.p + "assets/" + chunkId + "." + {"0":"1bc211","1":"095989","2":"618b33"}[chunkId] + ".bundle.js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -141,7 +141,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/webpack-demo/dist/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };

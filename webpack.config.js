@@ -10,15 +10,15 @@ module.exports = {
         contentBase: './dist'
     },
     entry: {
-        app: ['./src/index.js'],
-        vendor: ['./src/vendor.js'],
-        hello: ['./src/js/hello.js']
+        app: ['src/index.js'],
+        vendor: ['src/vendor.js'],
+        hello: ['src/js/hello.js']
     },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'assets/[name].[chunkHash:6].bundle.js',
-        publicPath: '/webpack-demo/dist/',
-        // publicPath: '/',
+        // publicPath: '/webpack-demo/dist/',
+        publicPath: '/',
     },
     module: {
         rules: [
