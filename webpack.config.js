@@ -17,8 +17,8 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'assets/[name].[chunkHash:6].bundle.js',
-        publicPath: '/',
-        //  publicPath: '/webpack-demo/dist/',
+        // publicPath: '/',
+         publicPath: '/webpack-demo/dist/',
     },
     module: {
         rules: [
@@ -104,9 +104,9 @@ module.exports = {
             title: '首頁',
             filename: 'index.html',
             template: path.resolve(__dirname, './src/index.html'),
-            minify: false
-            // chunksSortMode: 'manual',
-            // chunks: ['runtime', 'vendor', 'hello', 'app']
+            minify: false,
+            chunksSortMode: 'manual',
+            chunks: ['runtime', 'vendor', 'hello', 'app']
         }),
         // css抽出成一個檔案 , 加上 link tag.
         new ExtractTextPlugin('assets/[name].[contenthash:6].css'),
