@@ -17,8 +17,8 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'assets/[name].[chunkHash:6].bundle.js',
-        // publicPath: '/',
-         publicPath: '/webpack-demo/dist/',
+        publicPath: '/',
+        //  publicPath: '/webpack-demo/dist/',
     },
     module: {
         rules: [

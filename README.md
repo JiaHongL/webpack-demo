@@ -562,13 +562,16 @@ Plugin 的 處理前、處理後的有哪些例子呢？
 
     說明
         這邊用了extract-text-webpack-plugin這個套件，可以把css變成一個檔案，
-        這邊看到plugins裡有設定檔案輸出的位置，而rules裡有做一個傳給它的設定,
+        這邊看到plugins裡有設定檔案輸出的位置，而rules裡有做一個傳給它的設定.
+
         [name] => 因為css是從index.js抽出來的，而index.js又是放在app這個chunk，所以檔名會是 app.css
         [contenthash:6] => 判斷檔案內容，計算出x位數的hash. 
+
                            hash 目前看官方文件有三種計算方式
                                 1.hash:根據build的過程，計算的hash. (這是個人的理解，官方文件沒看到詳細的敘述.)
                                 2.chunkhash:根據chunk內容計算的hash.
                                 3.hashcontent:檔案內容計算的hash.
+                                
         PS:因為app.css這個檔案裡面，只有單純的css，不會再包一層module做運作，所以使用contenthash.
 ```
 
