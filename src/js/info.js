@@ -1,6 +1,6 @@
 export default class info {
     constructor() {
-        this.name = 'joe2222';
+        this.name = 'joe';
     }
     getName() {
         return this.name;

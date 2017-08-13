@@ -26,7 +26,7 @@ var info = function () {
     function info() {
         _classCallCheck(this, info);
 
-        this.name = 'joe2222';
+        this.name = 'joe';
     }
 
     _createClass(info, [{
