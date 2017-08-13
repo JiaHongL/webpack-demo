@@ -75,8 +75,8 @@
 - Plugin : 可以處理Loader做不到的事.
 - Output : 管理輸出處理後的資源. (只能有一個輸出口)
 
-運作過程 (這是我理解上的運作過程，因為官方文件沒特別比較Loader與Plugin) 
-&emsp; Entry(輸入)  ->  Plugin (處理前)  ->  Loader(解析中)  ->  Plugin(處理後)  ->  Output(輸出)  
+運作過程 (這是我理解上的運作過程，因為官方文件沒特別比較Loader與Plugin)   
+&emsp; Entry(輸入)  ->  Plugin (處理前)  ->  Loader(解析中)  ->  Plugin(處理後)  ->  Output(輸出)    
 
 Plugin 的 處理前、處理後的有哪些例子呢？  
 &emsp; 處理前：編譯前先刪除dist資料夾.  
@@ -334,7 +334,7 @@ Plugin 的 處理前、處理後的有哪些例子呢？
 ## 三、Webpack-demo 內容介紹 
 &emsp;看完前面兩個部分，基本上應該對Webpack會有初步了解，但這只是一小部分，建議還是去官網讀完教學文件，而這邊介紹的是這個webpack-demo的內容.
 
-目前這個配置有的功能 (也可以跳過第三部分，直接看webpack.config.js，有寫簡單的註解.)  
+目前這個配置有的功能 (可以跳過第三部分，直接看webpack.config.js，有寫簡單的註解.)  
 - 編譯前清除dist資料夾
 - 轉譯es6與壓縮醜化js
 - scss轉譯與把css抽出成一個檔案.
@@ -583,7 +583,7 @@ Plugin 的 處理前、處理後的有哪些例子呢？
 ```
 
 ```sh
-    有兩個地方
+    有兩個地方使用到照片
 
     src/style/scss/pages/_index.scss 
 
@@ -638,10 +638,12 @@ Plugin 的 處理前、處理後的有哪些例子呢？
 
     說明
         url-loader：如果檔案小於某xxx大小就會轉成 data url，就可以少一個http request. (這邊是設定小於10kb)
+
         image-webpack-loader：壓縮圖片.
-            PS:要記得運作的過程是從右到左，image-webpack-loader -> url-loader . 
+        PS:要記得運作的過程是從右到左，image-webpack-loader -> url-loader . 
+
         html-withimg-loader：處理html img有src的圖片.
-            PS:因為html沒有像css一樣被import，所以要另外加一個判斷html裡的img src.
+        PS:因為html沒有像css一樣被import，所以要另外加一個判斷html裡的img src.
 
 ```
 
@@ -757,12 +759,14 @@ vendor.js：不常變動.
             PS:這步驟算是一種規範，因為會放在vendor裡的，通常也是通用的部分.
         
         (3).如果有新增或移除import的時候，也會影響到各chunk的moduleId.
-            所以app.js只要有import的變動，vendor的moduleId也會受到影響，就會被重新計算hash.
+            所以app.js只要有import的變動，vendor的moduleId也會受到影響，就會被重新計算chunkhash.
             而解決的方面就是HashedModuleIdsPlugin來處理moduleId的這個問題.
        
 ```
 
 ![alt text](https://3.bp.blogspot.com/-oI0niK8vX5E/WZAjrgcaT5I/AAAAAAAAA0o/MmtZTA4t8q4zQSSOczSg6nRCw2-MNv1EgCLcBGAs/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%2B2017-08-13%2B%25E4%25B8%258B%25E5%258D%25886.00.48.png"選擇性的標題") 
 
+
+<br />
 
 > 此文章比較偏向筆記，擔心有遺漏之處，如有錯誤或建言，歡迎在[issues](https://github.com/JiaHongL/webpack-demo/issues) 提出，感謝.
