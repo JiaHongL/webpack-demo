@@ -10,15 +10,15 @@ module.exports = {
         contentBase: './dist'
     },
     entry: {
-        app: ['src/index.js'],
-        vendor: ['src/vendor.js'],
-        hello: ['src/js/hello.js']
+        app: ['./src/index.js'],
+        hello: ['./src/js/hello.js'],
+        vendor: ['./src/vendor.js']
     },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'assets/[name].[chunkHash:6].bundle.js',
-        // publicPath: '/webpack-demo/dist/',
         publicPath: '/',
+        //  publicPath: '/webpack-demo/dist/',
     },
     module: {
         rules: [
@@ -60,6 +60,16 @@ module.exports = {
                     'image-webpack-loader'
                 ]
             },
+            // 處理html的 ing url
+            {
+                test: /\.(htm|html)$/i,
+                use: {
+                        loader: 'html-withimg-loader',
+                        options: {
+                            min: false
+                        }
+                    }
+            },
             // 導出模組裡的jQuery成為全域
             {
                 test: require.resolve('jquery'),
@@ -93,10 +103,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: '首頁',
             filename: 'index.html',
-            template: 'html-withimg-loader?min=false!' + path.resolve(__dirname, './src/index.html'),
-            chunksSortMode: 'manual',
-            minify: false,
-            chunks: ['runtime', 'vendor', 'hello', 'app', ]
+            template: path.resolve(__dirname, './src/index.html'),
+            minify: false
+            // chunksSortMode: 'manual',
+            // chunks: ['runtime', 'vendor', 'hello', 'app']
         }),
         // css抽出成一個檔案 , 加上 link tag.
         new ExtractTextPlugin('assets/[name].[contenthash:6].css'),

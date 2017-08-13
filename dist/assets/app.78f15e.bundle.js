@@ -26,7 +26,7 @@ var info = function () {
     function info() {
         _classCallCheck(this, info);
 
-        this.name = 'joe';
+        this.name = 'joe2222';
     }
 
     _createClass(info, [{
@@ -60,9 +60,6 @@ var _info2 = _interopRequireDefault(_info);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 console.log(typeof GlobalVariable === 'undefined' ? 'undefined' : _typeof(GlobalVariable));
-
-// import 'style-loader!css-loader!sass-loader!./style/scss/style.scss';
-// webpack --module-bind 'scss=style-loader!css-loader!sass-loader';
 
 var Info = new _info2.default();
 var author = Info.getName();

@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 2:
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("PiyS");
@@ -23,4 +23,4 @@ console.log(typeof GlobalVariable === 'undefined' ? 'undefined' : _typeof(Global
 
 /***/ })
 
-},[2]);
+},[1]);
