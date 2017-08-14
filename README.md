@@ -329,6 +329,7 @@ Plugin 的 處理前、處理後的有哪些例子呢？
 ![alt text](https://3.bp.blogspot.com/-Vsa3erfUXY4/WY9JEauAzjI/AAAAAAAAAzk/3ZI5QqDKaXwy2Pmkiahx2mPqh0Zzl054gCLcBGAs/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%2B2017-08-13%2B%25E4%25B8%258A%25E5%258D%25882.13.43.png"選擇性的標題")
 
 
+<br />
 
 ## 三、Webpack-demo 內容介紹 
 &emsp;看完前面兩個部分，基本上應該對Webpack會有初步了解，但這只是一小部分，建議還是去官網讀完教學文件，而這邊介紹的是這個webpack-demo的內容.
@@ -345,19 +346,24 @@ Plugin 的 處理前、處理後的有哪些例子呢？
 
 因為過於冗長所以拆長章節  
 
-- 00.結構介紹
+- 00.結構介紹.md
 - 01.devServer.md
-- 02.build前清除dist資料夾
-- 03.轉譯壓縮醜化JS
-- 04.從JS抽出css成單獨檔案
-- 05.處理images
-- 06.處理Jquery全域問題
-- 07.緩存設定
-
-
-
-[Demo頁面](https://jiahongl.github.io/webpack-demo/dist/)  
+- 02.build前清除dist資料夾.md
+- 03.轉譯壓縮醜化JS.md
+- 04.從JS抽出css成單獨檔案.md
+- 05.處理images.md
+- 06.處理Jquery全域問題.md
+- 07.緩存設定.md
 
 <br />
 
 > 此文章比較偏向筆記，擔心有遺漏之處，如有錯誤或建言，歡迎在[issues](https://github.com/JiaHongL/webpack-demo/issues) 提出，感謝.
+
+[建議安裝 「Octotree」 方便切換閱讀](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?hl=en-US)  
+
+![alt text](https://1.bp.blogspot.com/-im6zW_b9nhc/WZELP1Qu1BI/AAAAAAAAA1I/94ANMHeapsktnj0VWH9iRVW76BlPhCcBACLcBGAs/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%2B2017-08-14%2B%25E4%25B8%258A%25E5%258D%258810.28.23.png"選擇性的標題")
+
+
+
+
+
