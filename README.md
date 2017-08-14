@@ -69,18 +69,24 @@
 
 ![alt text](https://1.bp.blogspot.com/-QJtEluHnb5E/WY6jHGtW17I/AAAAAAAAAzE/U0ASp6cSg2MnvxiGR6gz77NVOwqYPbesACLcBGAs/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%2B2017-08-12%2B%25E4%25B8%258B%25E5%258D%25882.19.52.png"選擇性的標題")
 
-搭配官網的圖片加上我自己的理解，來了解這些設定的作用，
-- Entry  : 輸入的文件. (能有多個輸入口)
-- Loader : 解析輸入的文件與文件相依的資源，進行相關處理.
-- Plugin : 可以處理Loader做不到的事.
-- Output : 管理輸出處理後的資源. (只能有一個輸出口)
+1.搭配官網的圖片加上我自己的理解，來了解這些設定的作用.
 
-運作過程 (這是我理解上的運作過程，因為官方文件沒特別比較Loader與Plugin)   
-&emsp; Entry(輸入)  ->  Plugin (處理前)  ->  Loader(解析中)  ->  Plugin(處理後)  ->  Output(輸出)    
+| 功能 | 作用 |
+| :------| :------|
+| Entry |輸入的文件. (能有多個輸入口)|
+| Loader|解析輸入的文件與文件相依的資源，進行相關處理|
+| Plugin|可以處理Loader做不到的事|
+|Output|管理輸出處理後的資源. (只能有一個輸出口)|
 
-Plugin 的 處理前、處理後的有哪些例子呢？  
-&emsp; 處理前：編譯前先刪除dist資料夾.  
-&emsp; 處理後：編譯後抽出css成一個檔案.  
+
+2.運作過程 (這是我理解上的運作過程，因為官方文件沒特別比較Loader與Plugin)   
+Entry(輸入)  ->  Plugin (處理前)  ->  Loader(解析中)  ->  Plugin(處理後)  ->  Output(輸出)    
+
+3.Plugin 的 處理前、處理後的有哪些例子呢？  
+處理前：編譯前先刪除dist資料夾.  
+處理後：編譯後抽出css成一個檔案.  
+
+<br />
 
 #### I.簡單範例介紹:
 
